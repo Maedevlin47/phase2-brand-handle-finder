@@ -86,21 +86,21 @@ Identify all candidate X accounts. Note follower counts, verified badge status, 
 **Step 4 — Cross-reference and select the best handle**
 For each platform, select the best handle using this priority order:
 1. Handle linked directly from the brand's official website
-2. Handle whose bio links back to the official website AND has the highest follower count
-3. Handle with the highest follower count among all candidates
-4. Handle confirmed across multiple independent sources (press, Wikipedia, directories)
-
-If no handle can be identified with reasonable confidence, use `-` for that field.
+2. Global handle preferred over a regional variant only when it is website-linked AND has a higher follower count — both conditions must be true
+3. Handle with the highest follower count among all candidates (global or regional)
+4. Other verification signals if follower counts are unavailable: bio links to the official website, cross-source confirmation, handle name match, verified badge
+5. If no handle can be identified with reasonable confidence, use `-` for that field and flag for manual review
 
 **Step 5 — Score confidence (0–100)**
 Start at 0. Apply the following, then cap the result between 0 and 100.
 
 Positive signals (add points):
-- +30 — verified badge found on the selected account
-- +25 — handle linked directly from the brand's official website
-- +20 — handle confirmed across multiple independent sources
-- +15 — handle name or branding clearly matches the brand
-- +10 — account appears active (recent posts visible)
+- +50 — handle linked directly from the brand's official website
+- +30 — profile bio links back to the brand's official website
+- +25 — handle confirmed across multiple independent sources (press, Wikipedia, directories)
+- +20 — selected account has the highest follower count among multiple candidate accounts for this platform
+- +18 — handle name is an exact or near-exact match to the brand name
+- +15 — verified badge found on the selected account
 
 Deductions (subtract points):
 - −15 — multiple competing accounts found with no clear winner
