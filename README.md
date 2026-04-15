@@ -1,12 +1,12 @@
 # Brand Handle Finder
 
-A Claude Code-native tool that finds and verifies the official Instagram and X (Twitter) handles for a list of brands — no API key required.
+A Claude Code-native tool that finds and verifies the official Instagram and X (Twitter) handles for a list of brands, no API key required.
 
 ---
 
 ## Overview
 
-Brand Handle Finder is a research tool that automates the tedious work of tracking down official social media handles for brands. You give it a list of brand names, and it searches the web, cross-references sources, and returns verified handles with a confidence score.
+Brand Handle Finder is a research tool that automates the work of tracking down official social media handles for brands. You give it a list of brand names, and it searches the web, cross-references sources, and returns verified handles with a confidence score.
 
 All research is performed by Claude Code's built-in web search — no external APIs, no scraping scripts, no infrastructure to manage.
 
