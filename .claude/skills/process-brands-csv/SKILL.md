@@ -1,3 +1,8 @@
+---
+name: process-brands-csv
+description: Process every brand in to-process.csv sequentially, finding official Instagram and X handles, writing results to results.csv, and removing each row after successful processing for full resumability.
+---
+
 Process every brand in `to-process.csv` sequentially, writing results to `results.csv` and removing each row from `to-process.csv` after it is successfully written. This gives full resumability: if the command is interrupted, re-running it continues from where it left off.
 
 ## Input and output files

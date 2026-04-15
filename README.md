@@ -36,7 +36,7 @@ All research is performed by Claude Code's built-in web search — no external A
 ```bash
 # 1. Clone the repo
 git clone <repo-url>
-cd phase2-brand-handle-finder
+cd brand_social_finder
 
 # 2. Install dependencies
 pip install -r requirements.txt
@@ -151,11 +151,8 @@ For each brand, the tool follows a 6-step research process:
 ## Project Structure
 
 ```
-phase2-brand-handle-finder/
+brand_social_finder/
 ├── .claude/
-│   ├── commands/
-│   │   ├── find-brand-handle.md    # Single brand lookup command
-│   │   └── process-brands-csv.md  # Batch processing command
 │   └── skills/
 │       └── find-brand-handle/     # Shared research logic
 ├── main.py                        # CSV utility helpers (read/write)

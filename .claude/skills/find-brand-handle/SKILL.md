@@ -1,7 +1,22 @@
+---
+name: find-brand-handle
+description: Find the official Instagram and X (Twitter) handles for a brand using web search. Supports single-brand interactive mode and CSV batch mode.
+---
+
 Find the official Instagram and X (Twitter) handles for a brand using web search. Supports two modes:
 
 - **CSV batch mode** (primary): `$ARGUMENTS` ends in `.csv` — process every brand in the file
 - **Single-brand mode** (secondary): `$ARGUMENTS` is a brand name — look up one brand interactively
+
+---
+
+## Token efficiency rules
+
+Follow these rules on every run to keep token usage lean:
+
+- **Do not fetch pages directly.** Use only web search results (titles, snippets, URLs). Do not use WebFetch or load any URLs. Search snippet data is sufficient to identify handles.
+- **Stop searching once confident.** If the first search returns a clear, unambiguous handle, do not run additional searches for that platform.
+- **Do not reprocess already-found brands.** If a handle is already known from a previous result or the current conversation, skip re-researching it.
 
 ---
 
